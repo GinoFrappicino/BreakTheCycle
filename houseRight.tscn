@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://pn81uq42jrgy"]
+
+[ext_resource type="Script" uid="uid://b4fqepkaskbw2" path="res://house_right.gd" id="1_n5tx5"]
+[ext_resource type="Texture2D" uid="uid://d2ciojpe2awgq" path="res://Backgrounds/HouseRight.png" id="2_gc2ra"]
+[ext_resource type="Texture2D" uid="uid://dmmw07w2koosy" path="res://Sprites/icon.svg" id="3_8xivw"]
+
+[node name="houseRight" type="Node2D"]
+script = ExtResource("1_n5tx5")
+
+[node name="HouseRight" type="Sprite2D" parent="."]
+position = Vector2(576, 322.5)
+scale = Vector2(0.8984375, 0.63964844)
+texture = ExtResource("2_gc2ra")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(855.00006, 238.00002)
+scale = Vector2(0.8125, 0.796875)
+texture = ExtResource("3_8xivw")
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 7.0
+offset_top = 110.0
+offset_right = 115.0
+offset_bottom = 342.0
+text = "Arrow"
+
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

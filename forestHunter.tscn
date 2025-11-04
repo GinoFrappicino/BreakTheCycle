@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://cln2l7me4daix"]
+
+[ext_resource type="Script" uid="uid://hm6dcgyostrs" path="res://forest_hunter.gd" id="1_csb83"]
+[ext_resource type="Texture2D" uid="uid://s0ahta1v637g" path="res://Backgrounds/forestHunter.png" id="2_ybgxt"]
+
+[node name="forestHunter" type="Node2D"]
+script = ExtResource("1_csb83")
+
+[node name="ForestHunter" type="Sprite2D" parent="."]
+position = Vector2(576.00006, 323.99997)
+scale = Vector2(0.90000004, 0.63281244)
+texture = ExtResource("2_ybgxt")
+
+[node name="Button1" type="Button" parent="."]
+offset_top = 120.0
+offset_right = 108.0
+offset_bottom = 389.9259
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Arrow"
+
+[connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]

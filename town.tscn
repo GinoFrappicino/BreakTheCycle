@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmlivlhqk8dt7"]
+
+[ext_resource type="Script" uid="uid://tcjn6pwr1l8k" path="res://town.gd" id="1_dwdjc"]
+[ext_resource type="Texture2D" uid="uid://6by4yt7o63wj" path="res://Backgrounds/town.png" id="1_x5mr4"]
+
+[node name="town" type="Node2D"]
+script = ExtResource("1_dwdjc")
+
+[node name="Town" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.9, 0.6328125)
+texture = ExtResource("1_x5mr4")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 8.0
+offset_top = 152.0
+offset_right = 116.0
+offset_bottom = 384.0
+size_flags_horizontal = 8
+text = "Arrow"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 880.0
+offset_top = 56.0
+offset_right = 944.0
+offset_bottom = 117.9259
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Arrow"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
