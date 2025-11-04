@@ -1,9 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bsdatcbwb63rj"]
+[gd_scene load_steps=4 format=3 uid="uid://bsdatcbwb63rj"]
 
 [ext_resource type="Script" uid="uid://dauk0ec7f6d1p" path="res://main.gd" id="1_ig7tw"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ig7tw"]
-size = Vector2(39, 36)
+[ext_resource type="PackedScene" uid="uid://cp1hsahnmkj22" path="res://inventory.tscn" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://cqt0v7lxk7gi" path="res://item.tscn" id="3_1bvp3"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_ig7tw")
@@ -22,10 +21,10 @@ offset_right = 178.0
 offset_bottom = 406.0
 text = "Arrow"
 
-[node name="Area2D" type="Area2D" parent="."]
-position = Vector2(331, 196)
+[node name="Inventory" parent="." instance=ExtResource("2_h2yge")]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-shape = SubResource("RectangleShape2D_ig7tw")
+[node name="Item" parent="." instance=ExtResource("3_1bvp3")]
+position = Vector2(593, 293)
+scale = Vector2(0.9028125, 0.90281254)
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
