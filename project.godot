@@ -14,3 +14,8 @@ config/name="Break The Cycle"
 run/main_scene="uid://bsdatcbwb63rj"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://Sprites/icon.svg"
+
+[autoload]
+
+GlobalInventory="*res://GlobalInventory.gd"
+Inventory="*res://Inventory/inventory.tscn"

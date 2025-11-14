@@ -1,62 +1,46 @@
-extends Node2D
+extends CanvasLayer
 
-var slot_1_filled = false
-var slot_2_filled = false
-var slot_3_filled = false
-var slot_4_filled = false
-var slot_5_filled = false
+# Persistent slots storing items
+var slots = [null, null, null, null, null]
+var slot_positions = []
 
-func fill_slot(slot):
-	match slot:
-		1: slot_1_filled = true
-		2: slot_2_filled = true
-		3: slot_3_filled = true
-		4: slot_4_filled = true
-		5: slot_5_filled = true
+func _ready():
+	# Cache slot positions relative to CanvasLayer
+	slot_positions = [
+		$InventorySlot1.position,
+		$InventorySlot2.position,
+		$InventorySlot3.position,
+		$InventorySlot4.position,
+		$InventorySlot5.position
+	]
 
-func empty_slot(slot):
-	match slot:
-		1: slot_1_filled = false
-		2: slot_2_filled = false
-		3: slot_3_filled = false
-		4: slot_4_filled = false
-		5: slot_5_filled = false
-		
-		
-func choose_slot(item):
-	var chosen_slot = 1
-	if !slot_1_filled:
-		chosen_slot = $InventorySlot1.global_position
-		slot_1_filled = true
-		item.drop_location_id = 1
-		
-	elif !slot_2_filled:
-		chosen_slot = $InventorySlot2.global_position
-		slot_2_filled = true
-		item.drop_location_id = 2
-		
-	return chosen_slot
-	
-func set_drop_location(item):
-	var drop_location
-	match item.drop_location_id:
-		0: drop_location = item.global_position
-		1: drop_location = $InventorySlot1.global_position
-		2: drop_location = $InventorySlot2.global_position
-	return drop_location
+	# Snap items already in slots
+	for i in range(slots.size()):
+		var item = slots[i]
+		if item != null:
+			if !item.get_parent():
+				add_child(item)
+			item.position = slot_positions[i]
 
+# Add an item to the first empty slot
+func add_item(item):
+	for i in range(slots.size()):
+		if slots[i] == null:
+			slots[i] = item
+			item.drop_location_id = i + 1
+			if !item.get_parent():
+				add_child(item)
+			item.position = slot_positions[i]
+			return i
+	return -1  # inventory full
 
+# Remove an item from a slot
+func remove_item(slot_index):
+	if slot_index >= 0 and slot_index < slots.size():
+		slots[slot_index] = null
 
-func _on_area_2d_area_entered(area):
-	if area.is_in_group("item") and !slot_1_filled:
-		empty_slot(area.get_parent().drop_location_id)
-		area.get_parent().drop_location_id = 1
-		fill_slot(area.get_parent().drop_location_id)
-		
-
-
-func _on_area_2d_2_area_entered(area):
-	if area.is_in_group("item") and !slot_2_filled:
-		empty_slot(area.get_parent().drop_location_id)
-		area.get_parent().drop_location_id = 2
-		fill_slot(area.get_parent().drop_location_id)
+# Get slot position for items
+func get_slot_position(slot_index):
+	if slot_index >= 0 and slot_index < slot_positions.size():
+		return slot_positions[slot_index]
+	return Vector2.ZERO

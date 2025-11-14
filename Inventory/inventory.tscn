@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c0rdb"]
 size = Vector2(96, 81)
 
-[node name="Node2D" type="Node2D"]
+[node name="Inventory" type="CanvasLayer"]
 script = ExtResource("1_pohso")
 
 [node name="InventorySlot1" type="Node2D" parent="."]
@@ -26,5 +26,29 @@ position = Vector2(306, 534)
 position = Vector2(-2, 2.5)
 shape = SubResource("RectangleShape2D_c0rdb")
 
-[connection signal="area_entered" from="InventorySlot1/Area2D" to="." method="_on_area_2d_area_entered"]
-[connection signal="area_entered" from="InventorySlot2/Area2D2" to="." method="_on_area_2d_2_area_entered"]
+[node name="InventorySlot3" type="Node2D" parent="."]
+position = Vector2(444, 533)
+
+[node name="Area2D3" type="Area2D" parent="InventorySlot3"]
+position = Vector2(2, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InventorySlot3/Area2D3"]
+position = Vector2(2, 1)
+shape = SubResource("RectangleShape2D_c0rdb")
+
+[node name="InventorySlot4" type="Node2D" parent="."]
+position = Vector2(587.45, 534)
+
+[node name="Area2D4" type="Area2D" parent="InventorySlot4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InventorySlot4/Area2D4"]
+position = Vector2(-0.4500122, -2)
+shape = SubResource("RectangleShape2D_c0rdb")
+
+[node name="InventorySlot5" type="Node2D" parent="."]
+position = Vector2(729, 532)
+
+[node name="Area2D5" type="Area2D" parent="InventorySlot5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InventorySlot5/Area2D5"]
+shape = SubResource("RectangleShape2D_c0rdb")

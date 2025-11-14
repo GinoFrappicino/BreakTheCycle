@@ -1,7 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://bsdatcbwb63rj"]
+[gd_scene load_steps=4 format=3 uid="uid://bsdatcbwb63rj"]
 
 [ext_resource type="Script" uid="uid://dauk0ec7f6d1p" path="res://main.gd" id="1_1bvp3"]
-[ext_resource type="PackedScene" uid="uid://cp1hsahnmkj22" path="res://Inventory/inventory.tscn" id="2_h2yge"]
 [ext_resource type="PackedScene" uid="uid://cqt0v7lxk7gi" path="res://Items/item.tscn" id="3_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://bktiu5ns2wngn" path="res://Backgrounds/HouseFront.png" id="4_1bvp3"]
 
@@ -12,7 +11,7 @@ script = ExtResource("1_1bvp3")
 [node name="HouseFront" type="Sprite2D" parent="."]
 z_index = -1
 y_sort_enabled = true
-position = Vector2(575.99994, 324)
+position = Vector2(576, 324)
 scale = Vector2(0.8999999, 0.6328125)
 texture = ExtResource("4_1bvp3")
 
@@ -41,9 +40,6 @@ offset_bottom = 249.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
 text = "Arrow"
-
-[node name="Inventory" parent="." instance=ExtResource("2_h2yge")]
-position = Vector2(-34, -54)
 
 [node name="Item" parent="." instance=ExtResource("3_1bvp3")]
 y_sort_enabled = true
