@@ -41,7 +41,6 @@ size_flags_vertical = 0
 text = "Arrow"
 
 [node name="Item" parent="." instance=ExtResource("3_1bvp3")]
-visible = false
 y_sort_enabled = true
 position = Vector2(424, 432.00006)
 scale = Vector2(0.053, 0.053)

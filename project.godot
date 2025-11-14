@@ -25,10 +25,13 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 directories/dch_directory={
 "Chains": "res://Characters/Chains.dch",
+"CultLeader": "res://Characters/CultLeader.dch",
 "FireAxe": "res://Characters/FireAxe.dch",
-"Hunter": "res://Characters/Hunter.dch"
+"Hunter": "res://Characters/Hunter.dch",
+"character": "res://character.dch"
 }
 directories/dtl_directory={
+"CultLeaderTalking": "res://Timeline/CultLeaderTalking.dtl",
 "HunterTalking": "res://Timeline/HunterTalking.dtl"
 }
 layout/style_directory={

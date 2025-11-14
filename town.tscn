@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://dmlivlhqk8dt7"]
+[gd_scene load_steps=5 format=3 uid="uid://dmlivlhqk8dt7"]
 
 [ext_resource type="Script" uid="uid://tcjn6pwr1l8k" path="res://town.gd" id="1_dwdjc"]
 [ext_resource type="Texture2D" uid="uid://c2n1hf3fqjuwm" path="res://Backgrounds/ghosttown.png" id="2_dwdjc"]
+[ext_resource type="Texture2D" uid="uid://bodresj4rw5oi" path="res://Sprites/place holder.png" id="3_e8yg3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gwqsq"]
+size = Vector2(224.2992, 199.2995)
 
 [node name="town" type="Node2D"]
 script = ExtResource("1_dwdjc")
@@ -20,12 +24,23 @@ size_flags_horizontal = 8
 text = "Arrow"
 
 [node name="Button2" type="Button" parent="."]
-offset_left = 880.0
-offset_top = 56.0
-offset_right = 944.0
-offset_bottom = 117.9259
+offset_left = 896.0
+offset_top = -72.0
+offset_right = 960.0
+offset_bottom = -10.074097
 size_flags_horizontal = 0
 size_flags_vertical = 0
 text = "Arrow"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1088.125, 418.125)
+scale = Vector2(0.35666668, 0.3033333)
+texture = ExtResource("3_e8yg3")
+
+[node name="Area2D" type="Area2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D"]
+position = Vector2(-0.35058594, -1.1608887)
+shape = SubResource("RectangleShape2D_gwqsq")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
