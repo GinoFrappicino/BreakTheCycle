@@ -19,3 +19,7 @@ config/icon="res://Sprites/icon.svg"
 
 GlobalInventory="*res://GlobalInventory.gd"
 Inventory="*res://Inventory/inventory.tscn"
+
+[display]
+
+window/stretch/mode="canvas_items"
