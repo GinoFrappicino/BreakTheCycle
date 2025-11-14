@@ -1,14 +1,16 @@
 [gd_scene load_steps=4 format=3 uid="uid://cqt0v7lxk7gi"]
 
-[ext_resource type="Texture2D" uid="uid://dmmw07w2koosy" path="res://Sprites/icon.svg" id="1_tnite"]
+[ext_resource type="Texture2D" uid="uid://7qgimfgolwew" path="res://Sprites/SilverCrystal.png" id="1_p2kau"]
 [ext_resource type="Script" uid="uid://ca0gi1rn84lqc" path="res://Items/item.gd" id="2_ttk8k"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ttk8k"]
+size = Vector2(44.844574, 165.71954)
 
 [node name="Sprite2D" type="Sprite2D"]
-position = Vector2(865, 181)
-scale = Vector2(0.8993749, 0.8525)
-texture = ExtResource("1_tnite")
+position = Vector2(968.916, 279.6941)
+rotation = -0.51836276
+scale = Vector2(0.06369272, 0.06049208)
+texture = ExtResource("1_p2kau")
 script = ExtResource("2_ttk8k")
 metadata/_edit_group_ = true
 
@@ -16,7 +18,9 @@ metadata/_edit_group_ = true
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-scale = Vector2(6.29, 6.29)
+position = Vector2(6.798828, 24.873047)
+rotation = -0.97563905
+scale = Vector2(6.2899985, 6.2899985)
 shape = SubResource("RectangleShape2D_ttk8k")
 
 [node name="Timer" type="Timer" parent="."]
