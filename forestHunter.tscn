@@ -1,7 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://cln2l7me4daix"]
+[gd_scene load_steps=6 format=3 uid="uid://cln2l7me4daix"]
 
 [ext_resource type="Script" uid="uid://hm6dcgyostrs" path="res://forest_hunter.gd" id="1_csb83"]
 [ext_resource type="Texture2D" uid="uid://s0ahta1v637g" path="res://Backgrounds/forestHunter.png" id="2_ybgxt"]
+[ext_resource type="Texture2D" uid="uid://cg20ht24ivo3v" path="res://Sprites/Peter_Griffin.png" id="3_amykr"]
+[ext_resource type="Script" uid="uid://c2vcw7wqe6cj2" path="res://hunter.gd" id="4_e1n3k"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_amykr"]
+radius = 79.0965
+height = 317.92224
 
 [node name="forestHunter" type="Node2D"]
 script = ExtResource("1_csb83")
@@ -10,6 +16,17 @@ script = ExtResource("1_csb83")
 position = Vector2(576.00006, 323.99997)
 scale = Vector2(0.90000004, 0.63281244)
 texture = ExtResource("2_ybgxt")
+
+[node name="Hunter" type="Sprite2D" parent="."]
+position = Vector2(656, 176)
+scale = Vector2(0.70799583, 0.65424806)
+texture = ExtResource("3_amykr")
+script = ExtResource("4_e1n3k")
+
+[node name="talkToHunter" type="Area2D" parent="Hunter"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hunter/talkToHunter"]
+shape = SubResource("CapsuleShape2D_amykr")
 
 [node name="Button1" type="Button" parent="."]
 offset_top = 120.0

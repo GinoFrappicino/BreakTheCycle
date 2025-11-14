@@ -1,0 +1,57 @@
+join Hunter left
+Hunter: Mmm? A person out here? What are you doing out here alone?
+- Just looking around, thats it
+	Hunter: uh, interesting... By chance, what are you looking for specifically?
+	- Have anything I can use to tie something up?
+		Hunter: Excuse me!? (Pulls gun) What’s your plan boy?
+		- My curtains keep falling down and I need to keep it in place!
+			join Chains right [animation="Fade In"]
+			Hunter: Ummm, I mean... I have these chains. I don’t have a use for them currently. They might not be the best thing but they might help.
+			[signal arg="exit_hunter"]
+		- To tie myself up...
+			join Chains right [animation="Fade In"]
+			Hunter: Ummm, I mean... I have these chains. I don’t have a use for them currently. They might not be the best thing but they might help.
+	- I heard there's someone up in these woods
+		Hunter: Ah, your probably talking about the Cult Leader, eh? I’m up here looking for him as we speak. He’s someone not to trust. Curious in his.... crafts?
+		- Is he the one who makes cures?
+			Hunter: Excuse me!? (Pulls gun) What’s your plan boy?
+			- I have a curse, duh...
+				Hunter: You’re a werewolf, aren’t you? Knew I’d come hear just before the eclipse. Well, it’s unfortunate that you came across me tonight then.
+			- I'm wanting to find this Cult Leader and kill him!
+				join FireAxe right [animation="Fade In"]
+				Hunter: (laughs) Well you don’t wanna go without anything, eh? I’m done using this. I think it’ll be better in your hands anyway.
+			- (Try to run away)
+				Hunter: You’re a werewolf, aren’t you? Knew I’d come hear just before the eclipse. Well, it’s unfortunate that you came across me tonight then.
+		- No, I wanna kill him
+			join FireAxe right [animation="Fade In"]
+			Hunter: (laughs) Well you don’t wanna go without anything, eh? I’m done using this. I think it’ll be better in your hands anyway.
+		- Never heard of him
+			join FireAxe right [animation="Fade In"]
+			Hunter: (laughs) Well you don’t wanna go without anything, eh? I’m done using this. I think it’ll be better in your hands anyway.
+- I need something
+	Hunter: uh, interesting... By chance, what are you looking for specifically?
+	- Have anything I can use to tie something up?
+		Hunter: Excuse me!? (Pulls gun) What’s your plan boy?
+		- My curtains keep falling down and I need to keep it in place!
+			join Chains right [animation="Fade In"]
+			Hunter: Ummm, I mean... I have these chains. I don’t have a use for them currently. They might not be the best thing but they might help.
+		- To tie myself up...
+			join Chains right [animation="Fade In"]
+			Hunter: Ummm, I mean... I have these chains. I don’t have a use for them currently. They might not be the best thing but they might help.
+	- I heard there's someone up in these woods
+		Hunter: Ah, your probably talking about the Cult Leader, eh? I’m up here looking for him as we speak. He’s someone not to trust. Curious in his.... crafts?
+		- Is he the one who makes cures?
+			Hunter: Excuse me!? (Pulls gun) What’s your plan boy?
+			- I have a curse, duh...
+				Hunter: You’re a werewolf, aren’t you? Knew I’d come hear just before the eclipse. Well, it’s unfortunate that you came across me tonight then.
+			- I'm wanting to find this Cult Leader and kill him!
+				join FireAxe right [animation="Fade In"]
+				Hunter: (laughs) Well you don’t wanna go without anything, eh? I’m done using this. I think it’ll be better in your hands anyway.
+			- (Try to run away)
+				Hunter: You’re a werewolf, aren’t you? Knew I’d come hear just before the eclipse. Well, it’s unfortunate that you came across me tonight then.
+		- No, I wanna kill him
+			join FireAxe right [animation="Fade In"]
+			Hunter: (laughs) Well you don’t wanna go without anything, eh? I’m done using this. I think it’ll be better in your hands anyway.
+		- Never heard of him
+			join FireAxe right [animation="Fade In"]
+			Hunter: (laughs) Well you don’t wanna go without anything, eh? I’m done using this. I think it’ll be better in your hands anyway.

@@ -23,9 +23,22 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
-directories/dch_directory={}
-directories/dtl_directory={}
-layout/style_directory={}
+directories/dch_directory={
+"Chains": "res://Characters/Chains.dch",
+"FireAxe": "res://Characters/FireAxe.dch",
+"Hunter": "res://Characters/Hunter.dch"
+}
+directories/dtl_directory={
+"HunterTalking": "res://Timeline/HunterTalking.dtl"
+}
+layout/style_directory={
+"": "res://Characters/TextureText.tres",
+"TextureText": "res://Characters/TextureText.tres"
+}
+layout/style_list=["res://Characters/TextureText.tres"]
+layout/default_style="res://Characters/TextureText.tres"
+glossary/default_case_sensitive=true
+variables={}
 
 [display]
 
