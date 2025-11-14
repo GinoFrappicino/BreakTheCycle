@@ -7,7 +7,7 @@
 script = ExtResource("1_stcry")
 
 [node name="Forest" type="Sprite2D" parent="."]
-position = Vector2(578, 324)
+position = Vector2(576, 328.00006)
 scale = Vector2(0.896875, 0.6328125)
 texture = ExtResource("1_lifw2")
 
