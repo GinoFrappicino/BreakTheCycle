@@ -6,8 +6,8 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ttk8k"]
 
 [node name="Sprite2D" type="Sprite2D"]
-position = Vector2(190.44, 159.44)
-scale = Vector2(2.54, 2.38375)
+position = Vector2(865, 181)
+scale = Vector2(0.8993749, 0.8525)
 texture = ExtResource("1_tnite")
 script = ExtResource("2_ttk8k")
 metadata/_edit_group_ = true

@@ -1,10 +1,16 @@
 extends Node2D
 
+var item = preload("res://Items/item.tscn")
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	spawn_initial_items()
+
+func spawn_initial_items():
+	var item = item.instantiate()
+	Inventory.add_item(item)  # this makes it persist
+
 
 
 func _on_button_pressed() -> void:
