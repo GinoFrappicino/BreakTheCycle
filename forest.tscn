@@ -1,38 +1,48 @@
 [gd_scene load_steps=3 format=3 uid="uid://bcd6m0xjkcrog"]
 
-[ext_resource type="Texture2D" uid="uid://befjuddox41i6" path="res://Backgrounds/forest.png" id="1_lifw2"]
 [ext_resource type="Script" uid="uid://c3q2m3cal138t" path="res://forest.gd" id="1_stcry"]
+[ext_resource type="Texture2D" uid="uid://dok42fab4hp6b" path="res://Backgrounds/cultleaderforest.png" id="2_stcry"]
 
 [node name="forest" type="Node2D"]
 script = ExtResource("1_stcry")
 
 [node name="Forest" type="Sprite2D" parent="."]
-position = Vector2(576, 328.00006)
-scale = Vector2(0.896875, 0.6328125)
-texture = ExtResource("1_lifw2")
+position = Vector2(576, 324)
+scale = Vector2(0.39303988, 0.3845697)
+texture = ExtResource("2_stcry")
+
+[node name="Button4" type="Button" parent="."]
+visible = false
+offset_left = 232.0
+offset_top = 240.0
+offset_right = 324.0
+offset_bottom = 304.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Arrow"
 
 [node name="Button1" type="Button" parent="."]
-offset_top = 120.0
+offset_top = 272.0
 offset_right = 108.0
-offset_bottom = 389.9259
+offset_bottom = 541.9259
 size_flags_horizontal = 0
 size_flags_vertical = 0
 text = "Arrow"
 
 [node name="Button2" type="Button" parent="."]
-offset_left = 520.0
-offset_top = 112.0
+offset_left = 552.0
+offset_top = 336.0
 offset_right = 648.0
-offset_bottom = 173.9259
+offset_bottom = 367.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
 text = "Arrow"
 
 [node name="Button3" type="Button" parent="."]
 offset_left = 960.0
-offset_top = 104.0
+offset_top = 288.0
 offset_right = 1088.0
-offset_bottom = 261.9259
+offset_bottom = 445.9259
 size_flags_horizontal = 0
 size_flags_vertical = 0
 text = "Arrow"
