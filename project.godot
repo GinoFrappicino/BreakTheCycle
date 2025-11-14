@@ -28,6 +28,7 @@ directories/dch_directory={
 "CultLeader": "res://Characters/CultLeader.dch",
 "FireAxe": "res://Characters/FireAxe.dch",
 "Hunter": "res://Characters/Hunter.dch",
+"PhotoGrapher": "res://Characters/PhotoGrapher.dch",
 "character": "res://character.dch"
 }
 directories/dtl_directory={
