@@ -7,11 +7,12 @@
 "prefix": "",
 "sound_mood_default": "",
 "sound_moods": {},
-"style": "",
+"style": "TextureText",
 "suffix": ""
 },
 &"default_portrait": "New portrait",
-&"description": "",
+&"description": "PhotoGrapher
+",
 &"display_name": "PhotoGrapher",
 &"mirror": false,
 &"nicknames": [""],

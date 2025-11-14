@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://1y66ij8ttoh8"]
+[gd_scene load_steps=7 format=3 uid="uid://1y66ij8ttoh8"]
 
 [ext_resource type="Script" uid="uid://brwaqmaco554d" path="res://house_left.gd" id="1_uphna"]
 [ext_resource type="Texture2D" uid="uid://dok42fab4hp6b" path="res://Backgrounds/cultleaderforest.png" id="2_x4h0s"]
 [ext_resource type="Texture2D" uid="uid://bodresj4rw5oi" path="res://Sprites/place holder.png" id="3_blus2"]
 [ext_resource type="Script" uid="uid://c3a5cs4tukxem" path="res://cult_leader.gd" id="4_qoyso"]
+[ext_resource type="Texture2D" uid="uid://b8u0xm02tmhyw" path="res://Sprites/Film.png" id="5_e1jw0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qoyso"]
 size = Vector2(234.07468, 231.25366)
@@ -35,5 +36,10 @@ script = ExtResource("4_qoyso")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CultLeader/Area2D"]
 position = Vector2(6.1035156e-05, 0)
 shape = SubResource("RectangleShape2D_qoyso")
+
+[node name="Film Recording" type="Sprite2D" parent="."]
+position = Vector2(808, 384.00003)
+scale = Vector2(0.1217447, 0.13320674)
+texture = ExtResource("5_e1jw0")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

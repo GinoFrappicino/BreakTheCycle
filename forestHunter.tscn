@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://cln2l7me4daix"]
+[gd_scene load_steps=7 format=3 uid="uid://cln2l7me4daix"]
 
 [ext_resource type="Script" uid="uid://hm6dcgyostrs" path="res://forest_hunter.gd" id="1_csb83"]
 [ext_resource type="Texture2D" uid="uid://dok42fab4hp6b" path="res://Backgrounds/cultleaderforest.png" id="2_e1n3k"]
 [ext_resource type="Texture2D" uid="uid://cg20ht24ivo3v" path="res://Sprites/Peter_Griffin.png" id="3_amykr"]
 [ext_resource type="Script" uid="uid://c2vcw7wqe6cj2" path="res://hunter.gd" id="4_e1n3k"]
+[ext_resource type="Texture2D" uid="uid://bik0k5105dqik" path="res://Sprites/LightBulb.png" id="5_xty4m"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_amykr"]
 radius = 79.0965
@@ -37,5 +38,11 @@ offset_bottom = 485.9259
 size_flags_horizontal = 0
 size_flags_vertical = 0
 text = "Arrow"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(696, 592)
+rotation = -0.97563905
+scale = Vector2(0.06901043, 0.06901043)
+texture = ExtResource("5_xty4m")
 
 [connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]

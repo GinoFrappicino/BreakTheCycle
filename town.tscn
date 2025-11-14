@@ -1,8 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://dmlivlhqk8dt7"]
+[gd_scene load_steps=8 format=3 uid="uid://dmlivlhqk8dt7"]
 
 [ext_resource type="Script" uid="uid://tcjn6pwr1l8k" path="res://town.gd" id="1_dwdjc"]
 [ext_resource type="Texture2D" uid="uid://c2n1hf3fqjuwm" path="res://Backgrounds/ghosttown.png" id="2_dwdjc"]
 [ext_resource type="Texture2D" uid="uid://bodresj4rw5oi" path="res://Sprites/place holder.png" id="3_e8yg3"]
+[ext_resource type="Script" uid="uid://c0c1y3i3nofrs" path="res://photo_grapher.gd" id="4_gwqsq"]
+[ext_resource type="Texture2D" uid="uid://d3pkbjx3q28a3" path="res://Sprites/Driedherbs.png" id="5_nki3b"]
+[ext_resource type="Texture2D" uid="uid://58xpy0dfttc" path="res://Sprites/Camera.png" id="6_tkreh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gwqsq"]
 size = Vector2(224.2992, 199.2995)
@@ -32,15 +35,26 @@ size_flags_horizontal = 0
 size_flags_vertical = 0
 text = "Arrow"
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="PhotoGrapher" type="Sprite2D" parent="."]
 position = Vector2(1088.125, 418.125)
 scale = Vector2(0.35666668, 0.3033333)
 texture = ExtResource("3_e8yg3")
+script = ExtResource("4_gwqsq")
 
-[node name="Area2D" type="Area2D" parent="Sprite2D"]
+[node name="Area2D" type="Area2D" parent="PhotoGrapher"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PhotoGrapher/Area2D"]
 position = Vector2(-0.35058594, -1.1608887)
 shape = SubResource("RectangleShape2D_gwqsq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(392, 256)
+scale = Vector2(0.098958336, 0.098958336)
+texture = ExtResource("5_nki3b")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(464, 544.00006)
+scale = Vector2(0.09895835, 0.09895835)
+texture = ExtResource("6_tkreh")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

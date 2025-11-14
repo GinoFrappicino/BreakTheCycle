@@ -33,7 +33,8 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "CultLeaderTalking": "res://Timeline/CultLeaderTalking.dtl",
-"HunterTalking": "res://Timeline/HunterTalking.dtl"
+"HunterTalking": "res://Timeline/HunterTalking.dtl",
+"PhotoGrapherTalking": "res://PhotoGrapherTalking.dtl"
 }
 layout/style_directory={
 "": "res://Characters/TextureText.tres",

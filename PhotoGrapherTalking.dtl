@@ -1,0 +1,16 @@
+join PhotoGrapher left
+PhotoGrapher: H-Hah! Another person! I-I thought you were the Werewolf Hunter. Surprising to see someone else here. What do you want?
+- Just looking around
+	PhotoGrapher: Huh... Well don’t be here to long. Please shut the door behind you when you leave.
+- I need your camera
+	PhotoGrapher: “You need my camera? What for?”
+	- I cant tell you, but ill give you something in return
+		PhotoGrapher: “Well, keep your secrets, I suppose. I’ll tell you what. I dropped my box of film somewhere in the woods. If you find it, I’ll load up the film for you and you can borrow it.”
+		- Thank you! (Leave)
+		- (Give camera)
+			PhotoGrapher: “Woah! Thank you! Where did you find this?”
+			- I know my ways. I still need with the camera
+				PhotoGrapher: “Ah, of course, looking at your outfit I wouldn’t suspect nothing less.”
+				- Can you set it up my house?
+					PhotoGrapher: “Mmm. I g-guess I can. Hope what you have for me is worth all of the trouble, or I swear I’ll make sure you pay.”
+					- ...

@@ -1,4 +1,13 @@
 join CultLeader left
 CultLeader: "Who goes there!? Nobody ever comes by these parts, unless they want something from me! It better be good; you interrupted my hex altercations!"
-- PlaceHolder
-- PlaceHolder
+- Can you make a cure for a curse?
+	CultLeader: Can you make a-- what kind of non-doctrine do you take me as!? Of course! What curse?
+	- A werewolf curse!
+		CultLeader: HAH! As if!! Even if I can sense something is up with you, theres nooo way! Unless you can actually PROVE it there’s no way I’m making something for you!
+- Are you recruiting
+	CultLeader: w-wh-wha? I’m appalled! Usually I make people spend up front and work your way up my evil allusive ranks! However, even if you where as rich as a raccon in a scrapyard, I can sense something is... wrong with you. Im not taking the chance till!
+	- Can you mkae a cure for this curse then?
+		CultLeader: Can you make a-- what kind of non-doctrine do you take me as!? Of course! What curse?
+		- A werewolf curse!
+			CultLeader: HAH! As if!! Even if I can sense something is up with you, theres nooo way! Unless you can actually PROVE it there’s no way I’m making something for you!
+- Sorry! (Leave)
