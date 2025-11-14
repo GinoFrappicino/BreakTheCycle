@@ -16,9 +16,10 @@ script = ExtResource("1_csb83")
 position = Vector2(576, 323.99997)
 scale = Vector2(0.39303988, 0.3845697)
 texture = ExtResource("2_e1n3k")
+flip_h = true
 
 [node name="Hunter" type="Sprite2D" parent="."]
-position = Vector2(935.9999, 352.00003)
+position = Vector2(831.99994, 352.00003)
 scale = Vector2(0.70799583, 0.65424806)
 texture = ExtResource("3_amykr")
 script = ExtResource("4_e1n3k")

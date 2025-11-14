@@ -1,15 +1,15 @@
 [gd_scene load_steps=3 format=3 uid="uid://1y66ij8ttoh8"]
 
 [ext_resource type="Script" uid="uid://brwaqmaco554d" path="res://house_left.gd" id="1_uphna"]
-[ext_resource type="Texture2D" uid="uid://ct158m1nw36j8" path="res://Backgrounds/HouseLeft.png" id="2_5l6qi"]
+[ext_resource type="Texture2D" uid="uid://dok42fab4hp6b" path="res://Backgrounds/cultleaderforest.png" id="2_x4h0s"]
 
 [node name="houseLeft" type="Node2D"]
 script = ExtResource("1_uphna")
 
 [node name="HouseLeft" type="Sprite2D" parent="."]
-position = Vector2(575.99994, 323.5)
-scale = Vector2(0.8999999, 0.63378906)
-texture = ExtResource("2_5l6qi")
+position = Vector2(576, 324)
+scale = Vector2(0.39303988, 0.38456976)
+texture = ExtResource("2_x4h0s")
 
 [node name="Button" type="Button" parent="."]
 offset_left = 1035.0
@@ -18,5 +18,7 @@ offset_right = 1143.0
 offset_bottom = 352.0
 size_flags_horizontal = 8
 text = "Arrow"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

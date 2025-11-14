@@ -24,10 +24,9 @@ size_flags_horizontal = 8
 text = "Arrow"
 
 [node name="Button2" type="Button" parent="."]
-offset_left = 1224.0
-offset_top = 64.0
-offset_right = 1332.0
-offset_bottom = 296.0
+offset_top = 200.0
+offset_right = 56.0
+offset_bottom = 432.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
 text = "Arrow"
@@ -42,6 +41,7 @@ size_flags_vertical = 0
 text = "Arrow"
 
 [node name="Item" parent="." instance=ExtResource("3_1bvp3")]
+visible = false
 y_sort_enabled = true
 position = Vector2(424, 432.00006)
 scale = Vector2(0.053, 0.053)
