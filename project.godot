@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Break The Cycle"
-run/main_scene="uid://bsdatcbwb63rj"
+run/main_scene="uid://bux2tb3i67vwr"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://Sprites/icon.svg"
 
